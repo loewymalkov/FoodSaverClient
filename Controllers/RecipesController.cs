@@ -17,8 +17,8 @@ namespace FoodSaverClient.Controllers
         [HttpGet("/")]
         public IActionResult Index()
         {
-            var allRecipes = Recipes.GetRecipes();
-            return View(allRecipes);
+            
+            return View();
         }
 
         public ActionResult Details (Recipe recipe)
