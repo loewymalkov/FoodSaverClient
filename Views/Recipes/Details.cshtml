@@ -1,2 +1,17 @@
 @* Details for a recipe that can be reached via dropdown from navbar *@
 
+@using FoodSaverClient.Models;
+@model Recipe;
+
+<h1>@Model.RecipeName:</h1>
+
+<ol>
+    <ul>
+        <li> @Model.RecipeName</li>
+        <li>Directions: @Model.Directions</li>
+        <li>Nutritional Info: @Model.NutritionInfo</li>
+        <li>Tips: @Model.RecipeTips </li>
+    </ul>
+</ol>
+
+<button class="btn btn-default">@Html.ActionLink("Back To Home", "Index")</button>
