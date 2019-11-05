@@ -20,11 +20,16 @@ namespace FoodSaverClient.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Index(Recipe recipe)
+        {
+            var targetRecipe = Recipe.PutRecipe(recipe);
+            return RedirectToAction("Details", "Home", targetRecipe);
+        }
+
         public ActionResult Details ()
         {
             return View();
         }
-
-
     }
 }

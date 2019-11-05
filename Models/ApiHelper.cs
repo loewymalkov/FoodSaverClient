@@ -38,13 +38,13 @@ namespace FoodSaverClient.Models
         //     return response.Content;
         // }
 
-        // public static async Task<string> ApiPut(int id, Word word)
-        // {
-        //     RestClient client = new RestClient("http://localhost:5000/api/words");
-        //     RestRequest request = new RestRequest($"/{id}", Method.PUT);
-        //     request.AddJsonBody(word);
-        //     var response = await client.ExecuteTaskAsync(request);
-        //     return response.Content;
-        // }
+        public static async Task<string> ApiPut(int id, Recipe recipe)
+        {
+            RestClient client = new RestClient("http://localhost:5000/api/recipes");
+            RestRequest request = new RestRequest($"/{id}", Method.PUT);
+            request.AddJsonBody(recipe);
+            var response = await client.ExecuteTaskAsync(request);
+            return response.Content;
+        }
     }
 }
