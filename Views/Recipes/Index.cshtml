@@ -1,12 +1,17 @@
-@* List of all recipes available on the website; can be clicked to get further details about the ingredients for that recipe, price, etc *@
-
 @{
     ViewData["Title"] = "Recipes";
 }
+
 @using FoodSaverClient.Models
-@model Recipe
+@model List<Recipe>
 
 <h1>@ViewData["Title"]</h1>
 
 <h1>Here is a list of the available recipes:</h1>
 
+<ul>
+@foreach (Recipe recipe in Model)
+{
+    <li>@Html.ActionLink(@recipe.RecipeName, "Details", new Recipe {RecipeId = recipe.RecipeId, RecipeName = recipe.RecipeName, Directions = recipe.Directions, NutritionInfo = recipe.NutritionInfo, RecipeTips = recipe.RecipeTips, PricePerServing = recipe.PricePerServing})</li>
+}
+</ul>

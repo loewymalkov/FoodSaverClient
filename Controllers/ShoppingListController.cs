@@ -14,21 +14,23 @@ namespace FoodSaverClient.Controllers
 {
     public class ShoppingListController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(User user)
         {
+            User newUser = new User();
             return View();
         }
 
         [HttpPost]
-        public ActionResult Index(Recipe recipe)
+        public ActionResult Create()
         {
-            var targetRecipe = Recipe.PutRecipe(recipe);
-            return RedirectToAction("Details", "Home", targetRecipe);
+            return RedirectToAction("Details", "ShoppingList");
         }
 
         public ActionResult Details ()
         {
             return View();
         }
+
+
     }
 }

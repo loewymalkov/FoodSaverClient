@@ -1,5 +1,3 @@
-@* Home page to navigate towards desired routes. Need someone to go over the text on this page. *@
-
 @{
     ViewData["Title"] = "Home";
 }
@@ -8,18 +6,5 @@
 
 <h1>Welcome to Food Saver webpage.  To get a food schedule please navigate to the shopping list, to browse our recipes please navigate to that section</h1>
 
-@using FoodSaverClient.Models
-@model User
-
-@using (Html.BeginForm())
-{
-    @Html.Label("Budget", "What's your budget?")
-    @Html.TextBoxFor(model => model.Budget)
-    <br>
-    @Html.Label("ServingQuantity", "How many people are you feeding?")
-    @Html.TextBoxFor(model => model.ServingQuantity)
-    
-    <button type="submit" class="btn btn-info">Let's pick some recipes</button>
-}
-
 <button class="btn btn-default">@Html.ActionLink("Take a look at Our Recipes", "Index", "Recipes")</button>
+<button class="btn btn-default">@Html.ActionLink("Add recipes to create a shopping list for this week or wtvr i dunno i dgaf", "Index", "ShoppingList")</button>

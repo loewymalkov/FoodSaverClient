@@ -16,11 +16,12 @@ namespace FoodSaverClient.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var allRecipes = Recipe.GetRecipes();
+            return View(allRecipes);
         }
+
         public ActionResult Details (Recipe recipe)
         {
-            
             return View(recipe);
         }
 

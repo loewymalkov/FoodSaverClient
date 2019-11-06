@@ -4,45 +4,16 @@
 
 <h1>@ViewData["Title"]</h1>
 
+@using FoodSaverClient.Models
+@model User
 
-<div class ="row">
-  <div class="col-md-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="recipe img">
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
-
-        <input type="radio" name="recipe1serving1"class="recipeServing" value=1 onclick="sidebarDisplayUpdater(pricePerServing, servingQuantity, recipeServings)">4 Servings<br>
-
-        <input type="radio" name="recipe1serving2" class="recipeServing" value=2 onclick="sidebarDisplayUpdater(pricePerServing, servingQuantity, recipeServings)">8 Servings<br>
-
-        <a href="#" class="btn btn-primary">View Recipe Details</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-@* FUNCTIONALITY WE WANT: 
-
-- ability to select any number of recipe options that will update in real time the information in a footer bar
-- needs to not refresh or reset the page each time an option is selected
-
-USING JAVASCRIPT WITHIN RAZOR CSHTML
-- to use javascript, assign variables with razor calls within script tags
-- use javascript to dynamically update the html sidebar for price, servings created, etc
-- pass on the changed variables to razor models 
-- change the models on submit
-
-<script>
-
-  let pricePerServing = @Recipe.PricePerServing;
-  let servingQuantity = @User.ServingQuantity;
-  let servingsPerRecipe = grab from jquery dropdown;
-
-  /* sidebarDisplayUpdater(pricePerServing, servingQuantity, servingsPerRecipe)
-
-</script>
-
-*@ 
+@using (Html.BeginForm("Create", "ShoppingList"))
+{
+    @Html.Label("Budget", "What's your budget?")
+    @Html.TextBoxFor(model => model.Budget)
+    <br>
+    @Html.Label("ServingQuantity", "How many people are you feeding?")
+    @Html.TextBoxFor(model => model.ServingQuantity)
+    
+    <button type="submit" class="btn btn-info">Let's pick some recipes!</button>
+}

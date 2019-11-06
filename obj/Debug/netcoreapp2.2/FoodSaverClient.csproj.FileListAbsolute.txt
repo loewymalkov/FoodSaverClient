@@ -31,3 +31,4 @@
 /Users/Guest/Desktop/FoodSaverClient/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
 /Users/Guest/Desktop/FoodSaverClient/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
 /Users/Guest/Desktop/FoodSaverClient/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
+/Users/Guest/Desktop/FoodSaverClient/obj/Debug/netcoreapp2.2/Razor/Views/ShoppingList/Create.g.cshtml.cs
