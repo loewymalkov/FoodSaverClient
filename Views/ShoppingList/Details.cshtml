@@ -3,8 +3,23 @@
 - DISPLAY INGREDIENT LIST, FULL COSTS, ETC *@
 
 @{
-    ViewData["Title"] = "ShoppingList";
+    ViewData["Title"] = "Shopping List";
 }
 
+@using FoodSaverClient.Models
+@model User
+
 <h1>@ViewData["Title"]</h1>
+
+<h2>Here is you're shopping list for the week:</h2>
+
+@foreach (Recipe recipe in Model.RecipeId)
+{
+    <h5>@recipe.RecipeName</h5>
+    @foreach (Ingredient ingredient in Model.Ingredients)
+    {
+        <li>X @ingredient.IngredientQuantity @ingredient.IngredientName</li>
+    }
+    <br>
+}
 
