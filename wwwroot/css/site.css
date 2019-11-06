@@ -50,7 +50,47 @@ body {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+  height: 40px;                 /* keep height and line-height the same value */
+  line-height: 40px;            /* Vertically center the text there */
+  z-index: 0;                   /* "0" keeps it above sidenav */
+  background-color: rgb(255, 255, 255);      /* CHANGE THIS. WHITE IS BORING */
+}
+
+/* ShoppingList sideBar styles
+---------------------------------------------------------*/
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: -1;  /* Keeps sidenav under all other elements (z-axis). "1" keeps it above most other elements */
+  top: 0;
+  right: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  padding-top: 60px; /* Distance sidenav-element is from top of sidenav */
+}
+
+.sidenav p {
+  text-align: center;    /* Centers all <p> tags within sidenav */
+}
+.sidenav-element {
+  padding: 1rem;
+  color: #818181;
+  display: block;
+}
+.sidenav p {             /* no need for this if we have no anchor tags */
+  /* padding: 6px 8px 6px 16px; */
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav p:hover {       /* no need for this if we have no anchor tags */
+  color: #f1f1f1;
+}
+
+.main {     /* Do not keep this as .main; This is the div that contains everything OUTSIDE of teh NavBar */
+  margin-right: 160px; /* KEEP THIS THE SAME AS THE WIDTH OF .SIDENAV also NOTE: may need to change to margin-right depending how ShoppingList View looks*/
+  padding: 0px 10px;
 }

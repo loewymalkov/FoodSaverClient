@@ -6,25 +6,36 @@ main ordering page for user to enter which recipes they want to select
     ViewData["Title"] = "ShoppingList";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="main">
 
-@* BEGIN FORM *@ 
-<div class ="row">
-  <div class="col-md-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="recipe img">
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
-
-        @* DROPDOWN FOR QUANTITY *@
-        @* RADIO BUTTON *@
-
-        <a href="#" class="btn btn-primary">View Recipe Details</a>
-      </div>
-    </div>
+  <h1>@ViewData["Title"]</h1>
+  <div class="sidenav">
+    <p class="sidenav-element">User Info</p>
+    <!-- User data (budget, servings, etc) goes here -->
+    <p class="sidenav-element">Element1<p>
+    <p class="sidenav-element">Element2<p>
+    <p class="sidenav-element">Element3<p>
+    
   </div>
 
+  @* BEGIN FORM *@ 
+  <div class ="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="recipe img">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+
+          @* DROPDOWN FOR QUANTITY *@
+          @* RADIO BUTTON *@
+
+          <a href="#" class="btn btn-primary">View Recipe Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 @* FUNCTIONALITY WE WANT: 

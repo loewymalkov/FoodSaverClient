@@ -41,7 +41,7 @@
                         <li class="dropdown">
                             <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown">All Recipes</a>
                             <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu bg-dark">
                                 <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe1</a></li>
                                 <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe2</a></li>
                                 <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe3</a></li>
@@ -56,7 +56,6 @@
         </nav>
     </header>
     <div class="container">
-        <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
