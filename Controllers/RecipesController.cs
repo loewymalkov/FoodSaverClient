@@ -14,7 +14,6 @@ namespace FoodSaverClient.Controllers
 {
     public class RecipesController : Controller
     {
-        [HttpGet("/")]
         public IActionResult Index()
         {
             return View();
