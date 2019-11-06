@@ -16,6 +16,8 @@ let sidebarDisplayUpdater = function(pricePerServing, servingSelection, recipeSe
         shoppingListServings += recipeServings;
     };
 
+// ADD 
+
 
 // NEED TO PASS shoppingListTotal back to User model
 // @Recipe.ShoppingListTotal += shoppingListTotal;
