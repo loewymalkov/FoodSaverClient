@@ -20,6 +20,7 @@ namespace FoodSaverClient.Controllers
         }
         public ActionResult Details (Recipe recipe)
         {
+            
             return View(recipe);
         }
 

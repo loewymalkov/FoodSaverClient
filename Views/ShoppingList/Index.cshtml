@@ -1,14 +1,10 @@
-@* - THINK ABOUT NAMING CONVENTION FOR THIS VIEW - 
-main ordering page for user to enter which recipes they want to select
-*@ 
-
 @{
     ViewData["Title"] = "ShoppingList";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-@* BEGIN FORM *@ 
+
 <div class ="row">
   <div class="col-md-4">
     <div class="card">
@@ -17,8 +13,9 @@ main ordering page for user to enter which recipes they want to select
         <h5 class="card-title"></h5>
         <p class="card-text"></p>
 
-        @* DROPDOWN FOR QUANTITY *@
-        @* RADIO BUTTON *@
+        <input type="radio" name="recipe1serving1"class="recipeServing" value=1 onclick="sidebarDisplayUpdater(pricePerServing, servingQuantity, recipeServings)">4 Servings<br>
+
+        <input type="radio" name="recipe1serving2" class="recipeServing" value=2 onclick="sidebarDisplayUpdater(pricePerServing, servingQuantity, recipeServings)">8 Servings<br>
 
         <a href="#" class="btn btn-primary">View Recipe Details</a>
       </div>
@@ -40,10 +37,11 @@ USING JAVASCRIPT WITHIN RAZOR CSHTML
 
 <script>
 
-  var pricePerServing = @Recipe.PricePerServing;
-  var recipeName = @Recipe.RecipeName;
-  
-  
+  let pricePerServing = @Recipe.PricePerServing;
+  let servingQuantity = @User.ServingQuantity;
+  let servingsPerRecipe = grab from jquery dropdown;
+
+  /* sidebarDisplayUpdater(pricePerServing, servingQuantity, servingsPerRecipe)
 
 </script>
 

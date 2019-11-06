@@ -4,24 +4,23 @@
 // Write your JavaScript code.
 
 let shoppingListTotal = 0;
-let shoppingListTotal = 0;
 let ingredientArray = [];
 
-let sidebarDisplayUpdater = function(pricePerServing, servingSelection, recipeServings) {
+let sidebarDisplayUpdater = function(pricePerServing, servingQuantity, recipeServings) {
         // Updates price
-        pricePerServing *= servingSelection;
+        pricePerServing *= servingQuantity;
         shoppingListTotal += pricePerServing;
         // Updates servings
-        recipeServings *= servingSelection;
+        recipeServings *= servingQuantity;
         shoppingListServings += recipeServings;
     };
 
+
+let grandTotal = function(shoppingList){
+    
+}
 // ADD 
-
-
 // NEED TO PASS shoppingListTotal back to User model
-// @Recipe.ShoppingListTotal += shoppingListTotal;
-
 // For loop to go through all ingredients for a given recipe
 // 
 
