@@ -2,4 +2,18 @@
 
 <h1>Welcome to Food Saver webpage.  To get a food schedule please navigate to the shopping list, to browse our recipes please navigate to that section</h1>
 
+@using FoodSaverClient.Models
+@model User
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Budget", "What's your budget?")
+    @Html.TextBoxFor(model => model.Budget)
+    <br>
+    @Html.Label("ServingQuantity", "How many people are you feeding?")
+    @Html.TextBoxFor(model => model.ServingQuantity)
+    
+    <button type="submit" class="btn btn-info">Add User</button>
+}
+
 <button class="btn btn-default">@Html.ActionLink("Take a look at Our Recipes", "Index", "Recipes")</button>

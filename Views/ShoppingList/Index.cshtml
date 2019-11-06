@@ -20,3 +20,24 @@ main ordering page for user to enter which recipes they want to select
   </div>
 
 </div>
+
+@* FUNCTIONALITY WE WANT: 
+
+- ability to select any number of recipe options that will update in real time the information in a footer bar
+- needs to not refresh or reset the page each time an option is selected
+
+USING JAVASCRIPT WITHIN RAZOR CSHTML
+- to use javascript, assign variables with razor calls within script tags
+- use javascript to dynamically update the html sidebar for price, servings created, etc
+- pass on the changed variables to razor models 
+- change the models on submit
+
+<script>
+
+  var pricePerServing = @Recipe.PricePerServing;
+  var recipeName = @Recipe.RecipeName;
+
+  j
+</script>
+
+*@ 
