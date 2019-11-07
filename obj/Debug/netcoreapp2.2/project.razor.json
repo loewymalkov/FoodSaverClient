@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/Guest/Desktop/FoodSaverClient/FoodSaverClient.csproj",
+  "FilePath": "c:\\Users\\Brendon\\Desktop\\FoodSaverClient\\FoodSaverClient.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,63 +2961,58 @@
   "RootNamespace": "FoodSaverClient",
   "Documents": [
     {
-      "FilePath": "Views/ShoppingList/Details.cshtml",
-      "TargetPath": "Views/ShoppingList/Details.cshtml",
+      "FilePath": "Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/ShoppingList/Create.cshtml",
-      "TargetPath": "Views/ShoppingList/Create.cshtml",
+      "FilePath": "Views\\ShoppingList\\Details.cshtml",
+      "TargetPath": "Views\\ShoppingList\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
-      "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
+      "FilePath": "Views\\ShoppingList\\Index.cshtml",
+      "TargetPath": "Views\\ShoppingList\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Home/Index.cshtml",
-      "TargetPath": "Views/Home/Index.cshtml",
+      "FilePath": "Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Recipes/Index.cshtml",
-      "TargetPath": "Views/Recipes/Index.cshtml",
+      "FilePath": "Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Shared/Error.cshtml",
-      "TargetPath": "Views/Shared/Error.cshtml",
+      "FilePath": "Views\\Recipes\\Index.cshtml",
+      "TargetPath": "Views\\Recipes\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/_ViewImports.cshtml",
-      "TargetPath": "Views/_ViewImports.cshtml",
+      "FilePath": "Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/ShoppingList/Index.cshtml",
-      "TargetPath": "Views/ShoppingList/Index.cshtml",
+      "FilePath": "Views\\ShoppingList\\Create.cshtml",
+      "TargetPath": "Views\\ShoppingList\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/_ViewStart.cshtml",
-      "TargetPath": "Views/_ViewStart.cshtml",
+      "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views/Shared/_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views/Recipes/Details.cshtml",
-      "TargetPath": "Views/Recipes/Details.cshtml",
+      "FilePath": "Views\\Recipes\\Details.cshtml",
+      "TargetPath": "Views\\Recipes\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
