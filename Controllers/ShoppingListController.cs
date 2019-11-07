@@ -20,15 +20,25 @@ namespace FoodSaverClient.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpGet]
         public ActionResult Create()
         {
+            SelectListItem one = new SelectListItem { Text = "34 Servings", Value = "1" };
+            SelectListItem two = new SelectListItem { Text = "68 Servings", Value = "2" };
+            ViewBag.servingMultiplier = new List<SelectListItem> { one, two };
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Recipe recipe)
+        {
+            var allRecipes = Recipe.GetRecipes();
             return RedirectToAction("Details", "ShoppingList");
         }
 
-        public ActionResult Details ()
+        public ActionResult Details (User user)
         {
-            return View();
+            return View(user);
         }
 
 

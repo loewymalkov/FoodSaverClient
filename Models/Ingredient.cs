@@ -5,10 +5,10 @@ namespace FoodSaverClient.Models
 {
     public class Ingredient
     {
-        public Ingredient()
-        {
-            this.Recipes = new HashSet<IngredientRecipe>();
-        }
+        // public Ingredient()
+        // {
+        //     this.Recipes = new HashSet<IngredientRecipe>();
+        // }
         public int IngredientId { get; set; }
         public string IngredientName { get; set; }
         public decimal IngredientPrice { get; set; }

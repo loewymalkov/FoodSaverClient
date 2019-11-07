@@ -15,3 +15,5 @@
     <li>@Html.ActionLink(@recipe.RecipeName, "Details", new Recipe {RecipeId = recipe.RecipeId, RecipeName = recipe.RecipeName, Directions = recipe.Directions, NutritionInfo = recipe.NutritionInfo, RecipeTips = recipe.RecipeTips, CostPerServing = recipe.CostPerServing})</li>
 }
 </ul>
+
+<button class="btn btn-default">@Html.ActionLink("Back To Home", "Index")</button>
