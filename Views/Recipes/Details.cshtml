@@ -1,40 +1,51 @@
 @{
-    ViewData["Title"] = "Recipes";
+    ViewData["Title"] = "RecipeId";
 }
 
 @using FoodSaverClient.Models;
 @model Recipe;
 
-<h1>@Model.RecipeName:</h1>
+<h1>@Model.RecipeName: </h1>
 
-
-    <div class="card success">
-      <div class="card-body success">
+  <div class = "row"></div>
+  <!-- <div class="card" id="card1"> -->
+      <!-- <div class="card-body">
+        <h5 class="card-title">/h5> 
+          <h4> @Model.PrepTime</h4>
+          <h4>@Model.CostPerServing</h4>
+      </div> -->
+    </div>
+    <div class="card" id="card1">
+      <div class="card-body">
         <h5 class="card-title">Directions</h5>
+        <img src=@Model.RecipePhoto alt= "O" class="recipepic">
         <p class="card-text">@Model.Directions</p>
+
+        
       </div>
     </div>
     <br>
-    <div class="card success">
+    <div class="card" id="card2">
       <div class="card-body">
         <h5 class="card-title">Nutrition Info</h5>
         <p class="card-text">@Model.NutritionInfo</p>
       </div>
     </div>
     <br>
-    <div class="card success">
+    <div class="card" id="card3">
       <div class="card-body">
-        <h5 class="card-title">Hot Tips</h5>
+        <h5 class="card-title">Tips</h5>
         <p class="card-text">@Model.RecipeTips</p>
       </div>
     </div>
     <br>
-    <div class="card success">
+    <div class="card" id="card4">
       <div class="card-body">
         <h5 class="card-title">Price Per Serving</h5>
         <p class="card-text">@Model.CostPerServing</p>
       </div>
     </div>
+  </div>
 
 
 
