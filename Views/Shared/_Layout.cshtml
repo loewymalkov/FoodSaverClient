@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-dark border-bottom box-shadow mb-3">     <!-- add fixed-top class to fix navbar to top of page -->
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FoodNavBar</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Food Saver</a>    <!-- The brand in the corner -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,22 +32,22 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Shopping List?</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="ShoppingList" asp-action="Details">Shopping List</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Some other thing idk</a>
+                            <a class="nav-link text-light" asp-controller="Recipes" asp-action="Index">All Recipes</a>
                         </li>
-                        <!-- trial dropdown, may not work -->
+                        
+                        <!-- trial dropdown, may not work
                         <li class="dropdown">
-                            <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown">All Recipes</a>
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe1</a></li>
-                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe2</a></li>
-                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe3</a></li>
-                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe4</a></li>
-                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe5</a></li>
-                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe6</a></li>
+                            <a class="nav-link text-light" data-toggle="dropdown">Recipes</a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li class="nav-item"><a class="nav-link text-light" asp-controller="Recipes" asp-action="[PUT ROUTE HERE]">Spaghetti with Meat Sauce</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-controller="Recipes" asp-action="[PUT ROUTE HERE]">Mac and Cheese Tuna Casserole</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-controller="Recipes" asp-action="[PUT ROUTE HERE]">Healthy Pre-Packaged Ramen Noodles</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-controller="Recipes" asp-action="[PUT ROUTE HERE]">Peanut Butter, Banana, Honey Oatmeal</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-controller="Recipes" asp-action="[PUT ROUTE HERE]">Beef Chili</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" asp-controller="Recipes" asp-action="[PUT ROUTE HERE]">Sausage, Mushroom, and Spinach Frittata</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -56,7 +56,6 @@
         </nav>
     </header>
     <div class="container">
-        <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -64,7 +63,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - MVCBoostrap - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2019 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
 
