@@ -8,13 +8,14 @@
 <h1>@Model.RecipeName: </h1>
 
   <div class = "row"></div>
-  <!-- <div class="card" id="card1"> -->
-      <!-- <div class="card-body">
+  @* <div class="card" id="card1">
+    <div class="card-body">
         <h5 class="card-title">/h5> 
           <h4> @Model.PrepTime</h4>
           <h4>@Model.CostPerServing</h4>
-      </div> -->
-    </div>
+      </div> 
+    </div> *@
+
     <div class="card" id="card1">
       <div class="card-body">
         <h5 class="card-title">Directions</h5>
@@ -46,24 +47,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-<!-- <ol>
-    <ul>
-        <li> @Model.RecipeName</li>
-        <li>Directions: @Model.Directions</li>
-        <li>Nutritional Info: @Model.NutritionInfo</li>
-        <li>Tips: @Model.RecipeTips </li>
-        <li>Price per serving: @Model.CostPerServing </li>
-    </ul>
-</ol> -->
 
 <button class="btn btn-default">@Html.ActionLink("Back To Home", "Index")</button>
 

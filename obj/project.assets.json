@@ -12108,11 +12108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/FoodSaverClient/FoodSaverClient.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/FoodSaverClientBranch/FoodSaverClient.csproj",
       "projectName": "FoodSaverClient",
-      "projectPath": "/Users/Guest/Desktop/FoodSaverClient/FoodSaverClient.csproj",
+      "projectPath": "/Users/Guest/Desktop/FoodSaverClientBranch/FoodSaverClient.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/FoodSaverClient/obj/",
+      "outputPath": "/Users/Guest/Desktop/FoodSaverClientBranch/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

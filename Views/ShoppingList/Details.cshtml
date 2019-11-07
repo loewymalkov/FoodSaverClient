@@ -1,28 +1,27 @@
-@* Final Check Out 
-
-- DISPLAY INGREDIENT LIST, FULL COSTS, ETC *@
-
-@*@{
+@{
     ViewData["Title"] = "Shopping List";
 }
 
+@using System
+@using System.Collections.Generic
 @using FoodSaverClient.Models
-@model User
+@model List<Ingredient>
 
-<h1>@ViewData["Title"]</h1>
+
 
 <h2>Here is you're shopping list for the week:</h2>
-
-@foreach (Recipe recipe in Model.RecipeId)
-{
-    <h5>@recipe.RecipeName</h5>
-    @foreach (Ingredient ingredient in Model.Ingredients)
-    {
-        <li>X @ingredient.IngredientQuantity @ingredient.IngredientName</li>
-    }
-    <br>
+@{
+    decimal ShoppingListTotal = 0;
 }
-
-<h2>The total cost of your shopping list is @Model.ShoppingListTotal</h2>*@
+<ul>
+@foreach (Ingredient ingredient in Model)
+{
+    <li> @ingredient.IngredientQuantity @ingredient.IngredientName, $ @ingredient.IngredientPrice</li>
+    
+    ShoppingListTotal += @ingredient.IngredientPrice;
+    
+}
+</ul>
+<h2>The total cost of your shopping list is $ @ShoppingListTotal</h2>
 
 

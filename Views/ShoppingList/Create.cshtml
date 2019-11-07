@@ -2,25 +2,24 @@
     ViewData["Title"] = "ShoppingList";
 }
 
-<h1>@ViewData["Title"]</h1>
+@using FoodSaverClient.Models
+@model User
 
 
-<div class ="row">
-  <div class="col-md-4">
+@{
+  var multiplier = ViewBag.servingMultiplier as List<SelectListItem>;
+}
+
+@using (Html.BeginForm())
+{
     <div class="card">
-      <img src="..." class="card-img-top" alt="recipe img">
       <div class="card-body">
         <h5 class="card-title"></h5>
         <p class="card-text"></p>
-
-        <input type="radio" name="recipe1serving1"class="recipeServing" value=1 onclick="sidebarDisplayUpdater(pricePerServing, servingQuantity, recipeServings)">4 Servings<br>
-
-        <input type="radio" name="recipe1serving2" class="recipeServing" value=2 onclick="sidebarDisplayUpdater(pricePerServing, servingQuantity, recipeServings)">8 Servings<br>
-
-        <a href="#" class="btn btn-primary">View Recipe Details</a>
+        @Html.Label("Servings", "Servings: ")
+        @Html.DropDownListFor(model => model.ServingMultiplier, multiplier,"--Servings--")
+         <button type="submit" class="btn btn-info" value="servingMultiplier">Submit Serving Size</button>
       </div>
     </div>
-  </div>
-
-</div>
+}
 
