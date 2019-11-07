@@ -12,6 +12,6 @@
 <ul>
 @foreach (Recipe recipe in Model)
 {
-    <li>@Html.ActionLink(@recipe.RecipeName, "Details", new Recipe {RecipeId = recipe.RecipeId, RecipeName = recipe.RecipeName, Directions = recipe.Directions, NutritionInfo = recipe.NutritionInfo, RecipeTips = recipe.RecipeTips, PricePerServing = recipe.PricePerServing})</li>
+    <li>@Html.ActionLink(@recipe.RecipeName, "Details", new Recipe {RecipeId = recipe.RecipeId, RecipeName = recipe.RecipeName, Directions = recipe.Directions, NutritionInfo = recipe.NutritionInfo, RecipeTips = recipe.RecipeTips, CostPerServing = recipe.CostPerServing})</li>
 }
 </ul>

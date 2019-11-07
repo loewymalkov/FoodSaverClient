@@ -16,7 +16,7 @@ namespace FoodSaverClient.Models
         public string Directions { get; set; }
         public string NutritionInfo { get; set; }
         public string RecipeTips { get; set; }
-        public decimal PricePerServing { get; set; }
+        public decimal CostPerServing { get; set; }
         public ICollection<IngredientRecipe> Ingredients { get; }
 
         public static List<Recipe> GetRecipes () 

@@ -2,21 +2,57 @@
     ViewData["Title"] = "Recipes";
 }
 
-<h1>@ViewData["Title"]</h1>
-
 @using FoodSaverClient.Models;
 @model Recipe;
 
 <h1>@Model.RecipeName:</h1>
 
-<ol>
+
+    <div class="card success">
+      <div class="card-body success">
+        <h5 class="card-title">Directions</h5>
+        <p class="card-text">@Model.Directions</p>
+      </div>
+    </div>
+    <br>
+    <div class="card success">
+      <div class="card-body">
+        <h5 class="card-title">Nutrition Info</h5>
+        <p class="card-text">@Model.NutritionInfo</p>
+      </div>
+    </div>
+    <br>
+    <div class="card success">
+      <div class="card-body">
+        <h5 class="card-title">Hot Tips</h5>
+        <p class="card-text">@Model.RecipeTips</p>
+      </div>
+    </div>
+    <br>
+    <div class="card success">
+      <div class="card-body">
+        <h5 class="card-title">Price Per Serving</h5>
+        <p class="card-text">@Model.CostPerServing</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- <ol>
     <ul>
         <li> @Model.RecipeName</li>
         <li>Directions: @Model.Directions</li>
         <li>Nutritional Info: @Model.NutritionInfo</li>
         <li>Tips: @Model.RecipeTips </li>
-        <li>Price per serving: @Model.PricePerServing </li>
+        <li>Price per serving: @Model.CostPerServing </li>
     </ul>
-</ol>
+</ol> -->
 
 <button class="btn btn-default">@Html.ActionLink("Back To Home", "Index")</button>
+
